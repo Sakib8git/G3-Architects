@@ -9,13 +9,18 @@
   text-decoration: none;
   list-style: none;
 }
+section{
+    margin-top: 130px;
+}
 .text-center {
   text-align: center;
 }
 .display-flex {
   display: flex;
 }
-
+.text-primary{
+  color: #ff900e;
+}
 /* dark 02 */
 .text-gray {
   color: #424242;
@@ -30,12 +35,17 @@
 }
 .primary-but {
   border-radius: 8px;
-  background: rgb(255, 144, 14);
+  background: #ff900e;
   color: white;
   padding: 20px 25px;
   font-size: 1.25rem;
   font-weight: 600;
   border: none;
+}
+
+.max-width{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* shared */
 
@@ -71,4 +81,48 @@
 }
 .banner-image img{
     width: 100%;
+}
+/* feture and team */
+.team_img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.teams_feture{
+    display: flex;
+    align-items: center;
+}
+.fetures{
+    margin-left: 120px;
+    max-width: 530px;
+}
+
+.section-title{
+    font-size: 2.8rem;
+
+}
+#quick-list{
+    font-weight: 500;
+}
+
+
+/* fact */
+.fact-card-con{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+  box-sizing: border-box;
+  padding: 40px 36px;
+  width: 240px;
+  height: 240px;
+  /* background-color: #ff900e; */
+  border:  1px solid #ff900e;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+.fact-num{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
 }
